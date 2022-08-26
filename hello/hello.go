@@ -22,7 +22,7 @@ func main() {
     // the time, source file, and line number.
     log.SetPrefix("greetings: ")
     log.SetFlags(0)
-    
+
     message, err := greetings.Hello("")
     // If an error was returned, print it to the console and
     // exit the program.
