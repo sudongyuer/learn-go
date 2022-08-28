@@ -7,6 +7,9 @@ import (
 func main() {
 	i, j := 42, 2701
 	p := &i
+	x := &p
+	fmt.Println(p)
+	fmt.Println(x)
 	fmt.Println(*p)
 	*p = 21
 	fmt.Println(i)
