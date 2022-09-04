@@ -7,16 +7,17 @@ import (
 )
 
 func WordCount(s string) map[string]int {
-	m := make(map[string]int)
-	for _, w := range strings.Split(s, " ") {
-		_, ok := m[w]
+	arr := strings.Split(s, " ")
+	res := make(map[string]int)
+	for _, v := range arr {
+		_, ok := res[v]
 		if !ok {
-			m[w] = 1
+			res[v] = 1
 		} else {
-			m[w] += 1
+			res[v]++
 		}
 	}
-	return m
+	return res
 }
 
 func main() {
